@@ -1,0 +1,521 @@
+baseURL = "https://gaorenyusi.github.io/"
+theme = "LoveIt"
+title = "Gaorenyusi's Blog"
+
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-CN"
+languageName = "简体中文"
+hasCJKLanguage = true
+copyright = ""
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = "page"
+
+[params]
+  defaultTheme = "auto"
+  gitRepo = "https://github.com/dillonzq/LoveIt"
+  fingerprint = ""
+  dateFormat = "2006-01-02"
+  title = "gaorenyusi"
+  description = "白茶清欢无别事，我在等风也等你"
+  images = ["https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"]
+
+  [params.author]
+    name = "gaorenyusi"
+    email = ""
+    link = ""
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      logo = ""
+      name = "Gaorenyusi's Blog"
+      post = ""
+      typeit = false
+
+  [params.footer]
+    enable = true
+    custom = ""
+    hugo = true
+    copyright = true
+    author = true
+    since = 2024
+    icp = ""
+    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  [params.section]
+    paginate = 50
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.list]
+    paginate = 50
+    dateFormat = "01-02"
+    rss = 10
+
+
+  [params.app]
+    title = "gaorenyusi"
+    noFavicon = false
+    svgFavicon = "https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"
+    themeColor = "#ffffff"
+    iconColor = "#5bbad5"
+    tileColor = "#da532c"
+
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+  [params.home]
+    # amount of RSS pages
+    # RSS 文章数目
+    rss = 10
+    # Home page profile
+    # 主页个人信息
+    [params.home.profile]
+      enable = true
+      gravatarEmail = ""
+      avatarURL = "https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"
+      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      typeit = true
+      social = true
+      disclaimer = ""
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      # 主页每页显示文章数量
+      paginate = 6
+      showFullContent = false
+  # Social config in home page
+  # 主页的社交信息设置
+  [params.social]
+    GitHub = ""
+    Linkedin = ""
+    Twitter = ""
+    Instagram = ""
+    Facebook = ""
+    Telegram = ""
+    Medium = ""
+    Gitlab = ""
+    Youtubelegacy = ""
+    Youtubecustom = ""
+    Youtubechannel = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = ""
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = ""
+    Weibo = ""
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = ""
+    Steam = ""
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = ""
+    Douban = ""
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = ""
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = ""
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = ""
+    Discord = ""
+    DiscordInvite = ""
+    Lichess = ""
+    ORCID = ""
+    Pleroma = ""
+    Kaggle = ""
+    MediaWiki= ""
+    Plume = ""
+    HackTheBox = ""
+    RootMe= ""
+    Malt = ""
+    TikTok = ""
+    TryHackMe = ""
+    Codeberg = ""
+    Email = ""
+    RSS = ""
+
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    # 一定填false，不然加载emoji表情会变慢
+    lightgallery = false
+    ruby = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = true
+    rssFullText = false
+
+    [params.page.toc]
+      enable = true
+      keepStatic = false
+      auto = true
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+    [params.page.math]
+      enable = false
+
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      copyTex = true
+      mhchem = true
+    [params.page.mapbox]
+      accessToken = "pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ"
+      lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
+      darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
+      navigation = true
+      geolocate = true
+      scale = true
+      fullscreen = true
+
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = false
+      Whatsapp = false
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Flipboard = false
+      Weibo = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Mix = false
+    # Comment config
+    # 评论系统设置
+    [params.page.comment]
+      enable = true
+      [params.page.comment.disqus]
+        enable = false
+        shortname = ""
+      [params.page.comment.gitalk]
+        enable = true
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+
+      [params.page.comment.valine]
+        enable = false
+        appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
+        appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = "https://leancloud.hugoloveit.com"
+        emoji = ""
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        languageCode = ""
+      [params.page.comment.telegram]
+        enable = false
+        siteID = ""
+        limit = 5
+        height = ""
+        color = ""
+        colorful = true
+        dislikes = false
+        outlined = false
+      [params.page.comment.commento]
+        enable = false
+      [params.page.comment.utterances]
+        enable = false
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+      [params.page.comment.giscus]
+        enable = false
+        repo = ""
+        repoId = ""
+        category = "Announcements"
+        categoryId = ""
+        lang = ""
+        mapping = "pathname"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom"
+        lazyLoading = false
+        lightTheme = "light"
+        darkTheme = "dark"
+
+    [params.page.library]
+      [params.page.library.css]
+    [params.page.seo]
+      images = ["https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"]
+
+      [params.page.seo.publisher]
+        name = "gaorenyusi"
+        logoUrl = "https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"
+
+
+  [params.typeit]
+    speed = 100
+    cursorSpeed = 1000
+    cursorChar = "|"
+    duration = -1
+
+
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+
+  [params.seo]
+    image = "https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"
+    thumbnailUrl = "https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"
+
+  [params.analytics]
+    enable = false
+    [params.analytics.google]
+      id = ""
+      anonymizeIP = true
+    [params.analytics.fathom]
+      id = ""
+      server = ""
+    [params.analytics.plausible]
+      dataDomain = ""
+    [params.analytics.yandexMetrica]
+      id = ""
+
+
+  [params.cookieconsent]
+    enable = false
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+
+
+  [params.cdn]
+    data = "jsdelivr.yml"
+
+
+  [params.compatibility]
+    polyfill = false
+    objectFit = false
+
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[permalinks]
+  posts = "/posts/:filename"
+
+[privacy]
+  [privacy.googleAnalytics]
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
+
+
+[languages]
+  
+  [languages.zh-cn]
+    weight = 2
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    hasCJKLanguage = true
+    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    [languages.zh-cn.menu]
+      [[languages.zh-cn.menu.main]]
+        weight = 1
+        identifier = "home"
+        pre = ""
+        post = ""
+        name = "主页"
+        url = "/"
+        title = ""
+      [[languages.zh-cn.menu.main]]
+        weight = 2
+        identifier = "posts"
+        pre = ""
+        post = ""
+        name = "文章"
+        url = "/posts/"
+        title = ""
+      [[languages.zh-cn.menu.main]]
+        weight = 4
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "标签"
+        url = "/tags/"
+        title = ""
+      [[languages.zh-cn.menu.main]]
+        weight = 3
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "分类"
+        url = "/categories/"
+        title = ""
+      [[languages.zh-cn.menu.main]]
+        weight = 5
+        identifier = "links"
+        pre = ""
+        post = ""
+        name = "友链"
+        url = "/links/"
+        title = "友链"
+      [[languages.zh-cn.menu.main]]
+        weight = 6
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "关于"
+        url = "/about/"
+        title = ""
+    [languages.zh-cn.params]
+      [languages.zh-cn.params.search]
+        enable = true
+        type = "lunr"
+        contentLength = 4000
+        placeholder = ""
+        maxResultLength = 10
+        snippetLength = 50
+        highlightTag = "em"
+        absoluteURL = false
+        [languages.zh-cn.params.search.algolia]
+          index = "index.zh-cn"
+          appID = "PASDMWALPK"
+          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+      [languages.zh-cn.params.home]
+        rss = 10
+        [languages.zh-cn.params.home.profile]
+          enable = true
+          gravatarEmail = ""
+          imageWidth= 150
+          imageHeight= 150
+          imageUrl = "https://gaorenyusi.oss-cn-chengdu.aliyuncs.com/img/logo.webp"
+          title = "Gaorenyusi"
+          subtitle = ""
+          typeit = true
+          social = true
+          disclaimer = ""
+      [languages.zh-cn.params.social]
+        GitHub = "gaorenyusi"
+        Bilibili = "353741931"
+        Email = "2711547386@qq.com"
+
+
